@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- start of setup-->
+    <script src="https://kit.fontawesome.com/678920d837.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script type='text/javascript' src='js/x3dom.js'></script>
+    <script type='text/javascript' src='js/x3dom.js'></script><link rel='stylesheet' type='text/css' href='css/x3dom.css'>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="js/swap_restyle.js"></script>
+    <script src="js/modelInteractions.js"></script>
+    <!-- end of setup -->
+  </head>  
+  <body id="bodyColor">
+    <!-- Logo and navigation bar -->
+    <nav id="headerColor" class="navbar sticky-top navbar-expand-sm navbar_monster">
+      <div class="container-fluid">  
+        <!-- Logo -->
+        <div class="logo">
+          <a class="navbar-brand" href="index.html">
+          <h1>Monster</h1>
+          <h1>Energy</h1>
+          <h2>Unleash </h2>
+          <h2>the beast.</h2>
+          </a>
+        </div>
+                 
+        <!-- Collapsible Navbar Menu Icon -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Link Menu item button to the links class navbar-collapse selector -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('home')">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('about')">About</a>
+              </li>
+          
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Drinks</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:swap('monster')">Monster</a>
+                  <a class="dropdown-item" href="javascript:swap('costa')">Costa</a>
+                  <a class="dropdown-item" href="javascript:swap('fanta')">Fanta</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="home" class = "container-fluid main_contents">
+    <div class="row">
+      <div class = "col-sm-12">
+        <div id="main_3d_image">
+          <div id="main_text" class="col-xs-12 col-sm-5">
+            <h1>Monster Energy</h1>
+            <h4>Founded by Hubert Hansen</h4>
+            <p>Monster Energy is an energy drink that was introduced in the United States in 2002. Monster Energy is one of the most influential and quintessential energy drink brands in the world with its unique green-claw logo recognized by people far and wide. It is a globally recognized brand that is most notably known for the sponsorship and support of sporting events such as motocross, skateboarding, snowboarding, MMA, BMX, and other such extreme sports</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!--selectors-->
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" id = monsterCard>
+          <a href="javascript:swap('monster')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets//images/monster.jpg" alt ="monster">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/monsterRender.png" alt="monster">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title">Monster Energy</h3>
+            <p class="card-text">Tear into a can of Monster Energy, the meanest energy drink on the planet.
+
+ 
+
+              It's the ideal combo of the right ingredients in the right proportion to deliver the big bad buzz that only Monster can.
+              
+               
+              
+              Monster packs a powerful punch but has a smooth easy drinking flavour.
+              
+               
+              
+              Athletes, musicians, anarchists, co-ed’s, road warriors, metal heads, geeks, hipsters, and bikers dig it- you will too.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <a href="javascript:swap('costa')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/costa.jpg" alt ="costa">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/costaRender.png" alt="monster">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title">Costa coffee</h3>
+            <p class="card-text">Treat your tastebuds to one of our new summer drinks, like the refreshing Tropical Mango Bubble Frappé or creamy Chocolate Fudge Brownie Frappé. Or why not go for one of our Iced Lattes. There's loads in the range to choose from to brighten up your day. Available now.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <a href="javascript:swap('fanta')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fanta.jpg" alt ="fanta">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fantaRender.png" alt="monster">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title">Fanta</h3>
+            <p class="card-text">We’re all born playful creatures. But the older we become, the less permission we give ourselves to be playful and we can easily feel burnt out or overwhelmed. All this seriousness, we call it the "Grey".
+
+ 
+
+              But we can always fight back the "Grey". How? By taking inspiration from the ones who stayed spontaneous and playful. The ones who bring colour to the world every day. The Colourful People.
+              
+               
+              
+              With our new campaign, Fanta wants to celebrate these Colourful People and reignite that spirit into people from all ages. So grab a Fanta and come play colourful with us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="about" style = "display:none">
+    <div class ="container-fluid">
+      <div class="row">
+        <div class = "col-2"></div>
+          <div id="main_text" class="col-8">
+            <h1>Project summary</h1>
+            <h4>By Jamie Harmon</h4>
+            <p>I wanted to use this page to delcare some of the areas of this project that I believe I undertook further understanding.</p>
+            <br>
+            <p>1. Use of Github to archive the project, the github link can be found via my submission on canvas and by clicking the github logo within my footer.</p>
+            <br>
+            <p>2. I managed to create a workflow from photoshop creating a texture sheet, to blender, exporting to an fbx, fbx loading into 3DS max to add cameras and lights, then exporting into VRML, then converting to VRML into a usable X3D file.</p>
+            <br>
+            <p>3. Additional modelling research, alot of the time I spent on this project unfortunately didn't amount to much usable, but I did realise how powerful the potential for X3D can be when I saw blender could intake OBJ files. I made use of this by using a third party client that I use to play the online MMO runescape, having a plugin export in-game models into blender. I was then able to make use of my previous workflow to get the model into the site as seen below, all without having a texture manually attached to it.</p>
+            <br>
+            <P>Overall I did find the project very enjoyable even if it was extrmely challenging for me and I did not accomplish all I had hoped to, thankyou for taking the module it was very thorough.</P>
+
+          </div>
+        <div class = "col-2"></div>
+        <x3d>
+          <scene>
+            <inline url="assets/x3d/med.x3d"></inline>
+          </scene>
+        </x3d>
+    </div>
+  </div>
+<!--Monster-->
+<div id = "monster" style = "display:none">
+  <div class ="container-fluid">
+    <div class = "row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div class = "card text-left">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('monster')">Monster</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('costa')">Costa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('fanta')">Fanta</a>
+              </li>
+            </ul>
+          </div>
+          <div class = "card-body">
+            <div class="model3D">
+              <x3d>
+                <scene>
+                  <inline nameSpaceName="model" mapDEFToID="true" url="assets/x3d/monsterCan.x3d"></inline>
+                </scene>
+              </x3d>
+            </div>
+            <div class="card-body">
+              <h1 class = "card-title">Monster Energy</h1>
+              <p class="card-text">This X3D model of the Monster Energy can has been created in blender, exported as an fbx,
+                put through 3DS Max to add helpers, then exported and converted into an X3D file.
+              </p>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraFront();">Right</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraBack();">Left</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraLeft();">Back</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraRight();">Front</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraTop();">Top</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraBottom();">Bottom</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-8">
+        <div class ="card-text-left">
+          <a href="javascript:swap('monster')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/monsterRender.png" alt="monster">
+          </a>
+          <a href="javascript:swap('costa')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/costaRender.png" alt="costa">
+          </a>
+          <a href="javascript:swap('fanta')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fantaRender.png" alt="fanta">
+          </a>
+        </div>
+      </div>
+      <div class = "col-sm-2"></div>
+    </div>
+  </div>
+</div>
+
+<!--costa-->
+<div id = "costa" style = "display:none">
+  <div class ="container-fluid">
+    <div class = "row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div class = "card text-left">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('monster')">Monster</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('costa')">Costa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('fanta')">Fanta</a>
+              </li>
+            </ul>
+          </div>
+          <div class = "card-body">
+            <div class="model3D">
+              <x3d>
+                <scene>
+                  <inline nameSpaceName="modelTwo" mapDEFToID="true" url="assets/x3d/costaCup.x3d"></inline>
+                </scene>
+              </x3d>
+            </div>
+            <div class="card-body">
+              <h3 class = "card-title">Costa cup</h3>
+              <p class="card-text">This X3D model of the Costa coffee cup has been created in blender, exported as an fbx,
+                put through 3DS Max to add helpers, then exported and converted into an X3D file.
+              </p>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraFront();">Front</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraBack();">Left</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraLeft();">Back</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraRight();">Front</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraTop();">Top</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraBottom();">Bottom</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-8">
+        <div class ="card-text-left">
+          <a href="javascript:swap('monster')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/monsterRender.png" alt="monster">
+          </a>
+          <a href="javascript:swap('costa')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/costaRender.png" alt="costa">
+          </a>
+          <a href="javascript:swap('fanta')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fantaRender.png" alt="fanta">
+          </a>
+        </div>
+      </div>
+      <div class = "col-sm-2"></div>
+    </div>
+  </div>
+</div>
+<!--fanta-->
+<div id = "fanta" style = "display:none">
+  <div class ="container-fluid">
+    <div class = "row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div class = "card text-left">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('monster')">Monster</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('costa')">Costa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('fanta')">Fanta</a>
+              </li>
+            </ul>
+          </div>
+          <div class = "card-body">
+            <div class="model3D">
+              <x3d>
+                <scene>
+                  <inline nameSpaceName="modelThree" mapDEFToID="true" url="assets/x3d/fantaCup.x3d"></inline>
+                </scene>
+              </x3d>
+            </div>
+            <div class="card-body">
+              <h3 class = "card-title">Fanta bottle</h3>
+              <p class="card-text">This X3D model of the Fanta long bottle can has been created in blender, exported as an fbx,
+                put through 3DS Max to add helpers, then exported and converted into an X3D file.
+              </p>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraFront();">Right</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraBack();">Left</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraLeft();">Back</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraRight();">Front</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraTop();">Top</a>
+              <a href="#" class="btn btn-primary btn-response" onclick="cameraBottom();">Bottom</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-8">
+        <div class ="card-text-left">
+          <a href="javascript:swap('monster')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/monsterRender.png" alt="monster">
+          </a>
+          <a href="javascript:swap('costa')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/costaRender.png" alt="costa">
+          </a>
+          <a href="javascript:swap('fanta')">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fantaRender.png" alt="fanta">
+          </a>
+        </div>
+      </div>
+      <div class = "col-sm-2"></div>
+    </div>
+  </div>
+</div>
+<br>
+<!--footer-->
+<nav class="navbar navbar-expand-sm footer">
+  <div class="container-fluid">   
+    <div class="navbar-text float-left copyright">
+        <p>&copy Mobile Web 3D Applications</p>
+    </div>
+    <div class="navbar-text social">
+          <a href="#"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+    </div>
+  </div>
+</nav> 
+    </div>
+  </div>
+  </body>
+</html>

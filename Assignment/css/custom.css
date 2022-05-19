@@ -1,0 +1,328 @@
+@font-face {
+	font-family: 'openSans';
+	src: url('../assets/fonts/OpenSans_Condensed-Regular.ttf');
+}
+@font-face {
+	font-family: Energy;
+	src: url('../assets/fonts/Green_Energy.ttf');
+}
+@font-face {
+	font-family: 'oswald';
+	src: url('../assets/fonts/Oswald-Regular.ttf');
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-family: Energy;
+    color: #9cff00;;
+}
+
+h2{
+    font-family: Energy;
+    color: #0c8900;
+}
+h3{
+    font-family: Oswald , sans-serif;
+    color: #1e1f21;
+}
+h4, h5, h6 {
+	font-family: Oswald, sans-serif;
+    color: #010b12;
+}
+
+/*Used everywhere on the page*/
+body {
+    background-color: #010b12;
+}
+
+/*Used for main contents*/
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Used for main 3d section in index*/
+#main_3d_image {
+    background-image: url(../assets/images/monsterBackground.jpg);
+    background-size: cover;
+    height: 400px;
+    margin: auto;
+}
+
+#main_text {
+    float: right;
+    margin: 1%;
+    width: 90%;
+    display: block;
+    background-color: #2bc20E;
+    padding: 5px;
+    border-radius: 10px;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+} 
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+}
+
+/* CSS rule to style the mobile logo */
+.logo {
+    margin-top: 3px;
+    }
+    
+    .logo h1 {
+    font-family: Energy; /* You don't need to repeat this for each media query as it is propagated */
+    font-size: 31px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+    
+    .logo h2 {
+    font-family: Energy;
+    font-size: 31px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+    }
+    
+    .logo h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+    }
+    
+    .logo p {
+    font-size: 7px; /* You may have to tweak this to get a good fit */
+    margin-top: 22px; /* You may have to tweak this to get a good fit */
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+    }
+
+    /* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
+*/
+
+/* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
+*/
+.navbar_monster{
+    background-color: #1E1F21; /* Set navbar background color */
+    /* border-color: yellow; Sets the navbar border color */
+    /* border-style: solid; */
+    border-width: 0px;
+    min-height:35px;
+}
+
+
+.navbar_monster .navbar-nav > li > a {
+    color: #9cff00;;  
+}
+.navbar_monster .navbar-brand {
+    color: #0c8900;
+}
+.navbar_monster .navbar-brand:hover {
+    color: #000000;
+}
+
+
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_monster .navbar-nav > li > a:hover, 
+.navbar_monster .navbar-nav > li > a:focus {
+    color: #0c8900;  
+}
+
+.navbar_monster.navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_monster .navbar-nav .nav-item > .active, 
+.navbar_monster .navbar-nav > .active > a:hover, 
+.navbar_monster .navbar-nav > .active > a:focus {
+    color:  #9cff00; /* Font color for active font */
+    background-color: #1E1F21; /* Blue color for background */
+}
+
+.navbar_monster  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.nav-item
+{
+    background-color: #1e1f21;
+}
+.navbar_monster .navbar-toggler {
+    outline: none !important;
+}
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #1e1f21;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #0c8900;
+}
+
+
+.card{
+    background-color: #2bc20E;
+    outline: #000000;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    margin-top: 5px;
+    background-color: #1E1F21;
+    border: 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* CSS rule to style the footer */
+.footer{
+    color: #2bc20E;
+    background-color: #1E1F21; /* Set navbar footer background color same as header */
+    height: 50px;
+    position:relative;
+    bottom:0;
+    width: 100%;
+}
+
+.navbar-text > a {
+    font-size: 10px;
+}
+
+.copyright {
+    padding-top: 8px;
+}
+
+.social {
+    padding-top: 0px;
+    width: 30%;   
+}
+
+.fa-twitter-square:before {
+    content: "\f081";
+    color: green;
+    font-size: 2em;
+}
+
+.fa-github-square:before {
+    content: "\f092"; 
+    color: yellow;
+    font-size: 2em;
+}
+
+.fa-google-plus-square:before {
+    content: "\f0d4"; 
+    color: blue;
+    font-size: 2em;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: red;
+    font-size: 2em; 
+}
+/*
+    X3D CSS
+*/
+.gallery-header {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+	font-family: Oswald, sans-serif;
+}
+
+.gallery-header:hover {
+    color: rgb(133, 219, 208);
+    border: 1px solid transparent;
+}
+
+.model3D  {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    padding: 2px;
+    height: 400px;
+}
+
+X3D, x3d {
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 100%
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  
+    #main_3d_image {
+        height: 200px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #main_3d_image {
+        height: 250px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    #main_3d_image {
+        height: 300px;
+    }
+    .footer {
+        position:absolute;
+        bottom:0;
+        width: 100%;
+        height: 75px;
+     }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    #main_3d_image {
+        height: 350px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+    #main_3d_image {
+        height: 400px;
+    }
+}
+
+    
